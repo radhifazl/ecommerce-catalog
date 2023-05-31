@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #00e6b4;
+    --secondary-color: #d2fcf3;
+    --text-color: #1E1E1E;
+    --secondary-text-color: #3F3F3F;
+    --font-lg: 28px;
+    --font-md: 20px;
+    --font-sm: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --font-lg: 20px;
+        --font-md: 12px;
+        --font-sm: 8px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+/* DEFINE ROOT VARIABLES FOR MEN AND WOMEN SECTION */
+.men {
+    --primary-color: #002772;
+    --secondary-color: #D6E6FF;
+}
+
+.women {
+    --primary-color: #720060;
+    --secondary-color: #FDE2FF;
+}
+
+/* USABLE CLASS */
+.flex-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-btn {
+    width: 259px;
+    height: 42px;
+    border-radius: 4px;
+    outline: none;
+    font-size: var(--font-md);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .product-btn {
+        width: 100%;
+    }
+}
